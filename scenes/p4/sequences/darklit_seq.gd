@@ -971,7 +971,7 @@ func kor_party_setup() -> void:
 		bowtie_tethers[3] = north_dps # sw
 	
 	# Handle water debuffs and potential swap
-	var non_tethers := [healers[1], dps[2], dps[3], tanks[1]]  # [nw, ne, se, sw]
+	var non_tethers := [healers[1], dps[3], dps[2], tanks[1]]  # [nw, ne, se, sw]
 	# Store pre-swap positions, to be used for bot movement.
 	var pre_water_swap_non_tethers = non_tethers.duplicate()
 	# Pick Waters, swap non-tethers if they are on same N/S side.
